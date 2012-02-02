@@ -4,27 +4,164 @@ Just In Case Application
 Week: 1
 Name: Fred Williams
 Term: MIU - 0212
-Date: 02/3/2012 
+Date: 02/2/2012 
 -->
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="description" content="Just In Case Application - Always Be Ready!" />
-		<meta name="keywords" content="jic, just in case, storage, food, survival" />
-		<meta name="robots" content="noindex, nofollow" />
-		<meta name="viewport" content="user-scalable=no, width=device-width" />
-		<meta name="viewport" content="target-densitydpi=device-dpi" />
-		<meta name="HandheldFriendly" content="True" />
-		<meta name="MobileOptimized" content="320" />
-		<link href="css/style.css" rel="stylesheet" />
-		<title>Getting Prepared</title>
-	</head>
-	<body>
-		<h1>Storage Preparation</h1>
-		<h2>Just In Case</h2>
-		<div>Helping you to prepare for any and all emergencies.</div>
-		<h3>Are You Prepared?</h3>
-		<input id="mysearch" type="search" />
-		<a href="additem.html">Start By Clicking Here!</a>
-	</body>
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Just In Case</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/style2.css"
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+
+<body>
+	<!-- 		This is my home page -->
+	<div data-role="page" id="homePage">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Just In Case</h1>
+		</div>
+		
+		<div>
+			<a href="additem.html" data-ajax="false"><img src="images/cta.png" id="cta" /></a>
+        </div>
+
+		
+		<div data-role="content">
+			<!-- 		This is my Browse/Titled Sections with my five different options. I also made sure that I gave this
+						section generous boarders for easy function on a mobile device. -->
+			<ul data-role="listview" data-inset="true" data-theme="b">
+			<li data-role="list-divider">Browse</li>
+					<li><p><a href="#foodPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Food Storage</a></p></li>
+					<li><p><a href="#suppliesPage" data-role="button" data-icon="arrow-r" data-iconpos="right">Supplies Storage</a></p></li>
+					<li><p><a href="#allPage" data-role="button" data-icon="arrow-r" data-iconpos="right">All Storages</a></p></li>
+					<li><p><a href="#datePage" data-role="button" data-icon="arrow-r" data-iconpos="right">Date Started</a></p></li>
+					<li><p><a href="#incomePage" data-role="button" data-icon="arrow-r" data-iconpos="right">Income Amount</a></p></li>
+			</ul>
+		
+			<!-- 		This is my search field -->
+			<div data-role="fieldcontain">
+				<label for="storagesearch">Search:</label>
+				<input type="search" name="storagesearch" id="storagesearch" />
+			</div>
+		
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+	
+	<!-- 	This is my Food Page Information -->
+	<div data-role="page" id="foodPage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Food Storage</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Where all the food is stored</p>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+
+	<!-- 	This is my Supplies Page Information -->
+	<div data-role="page" id="suppliesPage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Supplies Storage</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Where all the supplies is stored</p>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+
+	<!-- 	This is my All Storages Page Information -->
+	<div data-role="page" id="allPage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>All Storages</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Where all the storage are stored</p>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+	
+	<!-- 	This is my Date Started Page -->
+	<div data-role="page" id="datePage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Date Stated</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Where all the dates started are stored</p>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+	
+	<!-- 	This is my Income Page Information -->
+	<div data-role="page" id="incomePage" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Income Amount</h1>
+		</div>
+		
+		<div data-role="content">
+			<p>Where all the income information is stored</p>
+		</div>
+	
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+	
+	</div>
+
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
 </html>
