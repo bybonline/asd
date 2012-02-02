@@ -1,0 +1,146 @@
+/*
+Just In Case Application
+Week: 1
+Name: Fred Williams
+Term: MIU - 0212
+Date: 02/2/2012
+*/
+
+
+/*
+Specificty = If you have two (or more) conflicting CSS rules that point to the same element,
+there are some basic rules that a browser follows to determine which one is most specific
+and therefore wins out.
+
+http://www.htmldog.com/guides/cssadvanced/specificity/
+*/
+
+
+body{
+	background-color: #ece9ef;
+}
+
+
+
+h1{
+	color: red;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+
+h2{
+	color: black;
+	font-style: italic;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: -15px;	
+}
+
+
+h3{
+	color: black;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+p{
+	color: black;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 1.2em;
+}
+
+
+legend{
+	color: black;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+fieldset{
+	border: dashed;
+	color: red;
+	background: white;
+}
+
+span{
+	color: red;
+	font-style: italic, bold;
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+
+li{
+	margin-bottom: 10px;
+	color: black;
+	font-style: normal;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+
+
+input[type = submit]{
+	margin-top: 20px;
+	background-color: red;
+	color: white;
+	font-style: bold;
+	font-weight: bold;
+	font-family: Georgia, "Time New Roman", Arial;	
+}
+
+a{
+	border: red;
+	border-style: outset;
+	border-color: #dbdbdb;
+	border-width: 2px;
+	background: red;
+	color: white;
+	text-decoration: none;
+	padding: 5px 5px;
+	font-style: normal;
+	font-family: Georgia, Times, serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+nav{
+	margin-top: 10px;
+	font-style: normal;
+	font-family: Georgia, Times, serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+
+input[type=text]{
+	display: block;
+}
+
+input[type=date]{
+	display: block;
+}
+
+input[type=range]{
+	display: block;
+}
+
+textarea{
+	display: block;
+}

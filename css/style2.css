@@ -1,0 +1,25 @@
+/*
+Just In Case Application
+Week: 1
+Name: Fred Williams
+Term: MIU - 0212
+Date: 02/2/2012
+*/
+
+/*
+I created this second CSS file so that I can work with my image file (CTA) on my
+index file and not have to worry about losing what I have created in my input form
+and storage. Hopefuly later in the week I will be able to combine these two files
+into one.
+*/
+
+img[id=cta]{
+	padding: 6px; 
+	border-top: 1px solid #ddd; 
+	border-left: 1px solid #ddd; 
+	border-bottom: 1px solid #c0c0c0; 
+	border-right: 1px solid #c0c0c0; 
+	display:block; 
+	margin-left:auto; 
+	margin-right:auto
+}
