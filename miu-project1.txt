@@ -1,6 +1,0 @@
-Fred Williams
-Term: 0112 - VFW
-
-Git Repository Link: https://github.com/bybonline/vfw-project
-
-gh-branch Link: http://bybonline.github.com/vfw-project
